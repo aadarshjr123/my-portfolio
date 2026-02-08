@@ -1,0 +1,13 @@
+.scrambled-text {
+  max-width: 50rem;
+  color: #000;
+  font-family: "Courier New", monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-color: #000;
+
+  &__char {
+    will-change: transform;
+    display: inline-block;
+  }
+}

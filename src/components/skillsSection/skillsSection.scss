@@ -1,0 +1,65 @@
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Courier New", monospace;
+  margin: 3rem;
+
+  &__image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+      height: auto;
+      max-width: 35rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  &__toolkit {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: "Courier New", monospace;
+    background-color: none;
+    row-gap: 1rem;
+
+    &__title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      min-height: 100%;
+    }
+
+    &__tag {
+      display: flex;
+      background-color: #e5e7eb;
+      padding: 0.5rem 1rem;
+      border-radius: 0.4rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #111827;
+      transition: background-color 0.2s ease;
+      &:hover {
+        background-color: #d1d5db;
+      }
+    }
+  }
+}

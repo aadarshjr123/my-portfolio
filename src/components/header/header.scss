@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 10rem 0 10rem;
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__nav {
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+
+    &-item {
+      font-family: "Courier New", monospace;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #000;
+      transition: color 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        color: #f04d4d;
+      }
+    }
+  }
+}
