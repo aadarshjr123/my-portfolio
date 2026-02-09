@@ -1,9 +1,10 @@
-import React from "react";
-import "./IntroSection.scss";
+import Tippy from "@tippyjs/react";
+
 import introSectionImage from "@assets/introSectionImage.svg";
 import TextType from "@components/effects/textType/textType";
-import Tippy from "@tippyjs/react";
+
 import "tippy.js/dist/tippy.css";
+import "./IntroSection.scss";
 
 const IntroSection = () => {
   return (

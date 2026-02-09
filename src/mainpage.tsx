@@ -3,12 +3,12 @@ import IntroSection from "@components/introSection/introSection";
 import Squares from "@components/effects/squares/squares";
 import ExperienceComic from "@components/experienceSection/experienceSection";
 import FooterSection from "@components/footerSection/footerSection";
-
 import ProjectComic from "@components/projectSection/projectSection";
 import SkillsSection from "@components/skillsSection/skillsSection";
+
 import "./mainpage.scss";
 
-const App = () => {
+const MainPage = () => {
   return (
     <div className="main-page">
       <div className="main-page__background">
@@ -32,4 +32,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MainPage;

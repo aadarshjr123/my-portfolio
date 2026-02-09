@@ -1,0 +1,60 @@
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.card-grid__card {
+  width: 100%;
+  max-width: 20rem;
+  flex: 1 1 18rem;
+
+  border-radius: 1rem;
+  padding: 1.25rem;
+  min-height: 14rem;
+
+  border: 2px dashed rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-grid__card:hover {
+  transform: scale(1.03);
+}
+
+.card-grid__card:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(240, 77, 77, 0.6),
+    0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-grid__title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-grid__subtitle {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.card-grid__meta {
+  margin-top: 0.35rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.card-grid__badge {
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.85;
+}

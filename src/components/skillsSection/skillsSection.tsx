@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./skillsSection.scss";
+
 import skillsSectionImg1 from "@assets/skillsSectionImg1.svg";
 import skillsSectionImg2 from "@assets/skillsSectionImg2.svg";
-import TargetCursor from "@components/effects/TargetCursor/targetCursor";
+
+import "./skillsSection.scss";
 
 const techStack = [
   // Languages
@@ -51,7 +52,7 @@ const SkillsSection: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills">
       <div
         className="skills-section__image"
         onMouseEnter={() => setIsHovered(true)}
@@ -69,10 +70,6 @@ const SkillsSection: React.FC = () => {
           onMouseEnter={() => setShowCursor(true)}
           onMouseLeave={() => setShowCursor(false)}
         >
-          {showCursor && (
-            <TargetCursor spinDuration={2} hideDefaultCursor={true} />
-          )}
-
           <h2 className="skills-section__toolkit__title">My toolkit</h2>
           <div className="skills-section__toolkit__tags">
             {techStack.map((tech, index) => (

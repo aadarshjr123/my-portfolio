@@ -1,6 +1,6 @@
-import React from "react";
-import "./header.scss";
 import ScrambledText from "@components/effects/scrambledText/scrambledText";
+
+import "./header.scss";
 
 const Header = () => {
   return (

@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./mainpage";
+
+import MainPage from "./mainpage";
+
 import "./index.scss";
 import "tippy.js/dist/tippy.css";
 
@@ -12,6 +14,6 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
-  </StrictMode>
+    <MainPage />
+  </StrictMode>,
 );
