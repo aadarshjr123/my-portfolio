@@ -5,12 +5,14 @@
   align-items: center;
   font-family: "Courier New", monospace;
   margin: 3rem;
+  gap: 2rem; // helps spacing when wrapping
 
   &__content {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     width: 50%;
+    min-width: 320px; // prevents content getting too narrow on mid sizes
   }
 
   &__tooltip-content {
@@ -19,9 +21,13 @@
     background-color: white !important;
     color: #000 !important;
   }
+
   &__tooltip {
     background-color: rgba(47, 48, 48, 0.247);
+    padding: 0 0.2rem;
+    border-radius: 4px;
   }
+
   &__title {
     font-size: 2rem;
     font-weight: 700;
@@ -54,6 +60,7 @@
 
   &__image {
     width: 40%;
+    min-width: 280px; // keeps image block usable on mid sizes
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +68,91 @@
     img {
       width: 80%;
       max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* ========= Laptop / smaller desktop ========= */
+@media (max-width: 1024px) {
+  .intro-section {
+    margin: 2rem;
+
+    &__content {
+      width: 55%;
+      padding: 1.5rem;
+    }
+
+    &__image {
+      width: 40%;
+
+      img {
+        width: 90%;
+      }
+    }
+
+    &__title {
+      font-size: 1.8rem;
+    }
+
+    &__description {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* ========= Tablet / large phones ========= */
+@media (max-width: 768px) {
+  .intro-section {
+    margin: 1.5rem;
+    flex-direction: column; // stack content + image
+    align-items: stretch;
+
+    &__content {
+      width: 100%;
+      min-width: 0;
+      padding: 1.25rem;
+    }
+
+    &__image {
+      width: 100%;
+      min-width: 0;
+
+      img {
+        width: min(420px, 90%); // never huge, never tiny
+      }
+    }
+
+    &__button {
+      width: fit-content;
+    }
+  }
+}
+
+/* ========= Small phones ========= */
+@media (max-width: 480px) {
+  .intro-section {
+    margin: 1rem;
+    gap: 1.25rem;
+
+    &__title {
+      font-size: 1.5rem;
+      line-height: 1.25;
+    }
+
+    &__description {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    &__content {
+      padding: 1rem;
+    }
+
+    &__button {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.95rem;
+      border-radius: 10px;
     }
   }
 }

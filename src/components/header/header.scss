@@ -1,8 +1,11 @@
 .header {
   display: flex;
-  justify-content: start;
   align-items: center;
-  margin: 0 10rem 0 10rem;
+  justify-content: flex-start;
+  margin: 0 10rem;
+  padding: 1.5rem 0;
+  gap: 2rem;
+
   &__title {
     display: flex;
     justify-content: center;
@@ -23,6 +26,62 @@
 
       &:hover {
         color: #f04d4d;
+      }
+    }
+  }
+}
+
+/* ========= Laptop / smaller desktop ========= */
+@media (max-width: 1024px) {
+  .header {
+    margin: 0 4rem;
+
+    &__nav {
+      gap: 1.5rem;
+
+      &-item {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+/* ========= Tablet ========= */
+@media (max-width: 768px) {
+  .header {
+    margin: 0 2rem;
+    padding: 1.25rem 0;
+
+    &__nav {
+      gap: 1.25rem;
+
+      &-item {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* ========= Mobile ========= */
+@media (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      display: flex;
+      width: 100%;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    &__nav {
+      margin-left: 0;
+      gap: 1.5rem;
+
+      &-item {
+        font-size: 1rem;
       }
     }
   }

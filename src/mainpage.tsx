@@ -10,8 +10,8 @@ import "./mainpage.scss";
 
 const App = () => {
   return (
-    <div className="mainpage">
-      <div className="mainpage__background">
+    <div className="main-page">
+      <div className="main-page__background">
         <Squares
           speed={0.2}
           squareSize={10}
@@ -20,7 +20,7 @@ const App = () => {
         />
       </div>
 
-      <div className="mainpage__content">
+      <div className="main-page__content">
         <Header />
         <IntroSection />
         <ExperienceComic />
