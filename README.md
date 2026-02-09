@@ -1,12 +1,138 @@
-# React + Vite
+# 📌 Portfolio — Aadarsh Sasi Kumar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio built with **React, TypeScript, and Vite**, showcasing my experience, projects, and technical skill set with a focus on **clean architecture, SOLID principles, and maintainable UI components**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ⚡ **Vite-powered** development & build
+- 🧠 **SOLID & clean component architecture**
+- ♻️ Reusable UI primitives (CardGrid, Modal)
+- 🎯 Fully responsive (desktop → mobile)
+- ♿ Accessible interactions (keyboard navigation, focus states, ESC-close modals)
+- 🎨 SCSS with BEM-style naming
+- 🧩 Interactive UI effects (scrambled text, hover effects, tooltips)
+- 📦 Strong separation of concerns (data, UI, sections)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- React 18
+- TypeScript
+- Vite
+- SCSS (BEM methodology)
+
+### UI & UX
+
+- Tippy.js (tooltips)
+- Custom animations & cursor effects
+- Responsive layouts
+
+### Code Quality
+
+- SOLID principles
+- DRY & separation of concerns
+- Reusable components
+- Strong typing
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├─ assets/               # Images & SVGs
+├─ components/
+│  ├─ effects/           # Visual & cursor effects
+│  ├─ ui/                # Reusable UI primitives (Modal, CardGrid)
+│  ├─ experienceSection/
+│  ├─ projectSection/
+│  ├─ skillsSection/
+│  ├─ introSection/
+│  ├─ header/
+│  └─ footerSection/
+├─ data/                 # Static data (experience, projects)
+├─ types/                # Shared TypeScript types
+├─ index.scss            # Global styles
+├─ main.tsx              # App entry
+└─ mainpage.tsx          # Main page layout
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start the dev server
+
+```bash
+npm run dev
+```
+
+Open: http://localhost:5173
+
+---
+
+## 🏗 Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🧪 Linting
+
+```bash
+npm run lint
+```
+
+---
+
+## 🧠 Architectural Notes
+
+- Sections focus only on composition, not data ownership
+- Data is stored separately for easy extension
+- UI components are reusable and predictable
+- State is kept local and minimal
+- Accessibility is treated as a first-class concern
+
+---
+
+## 📬 Contact
+
+- **Email:** aadarshsasikumar@gmail.com
+- **GitHub:** https://github.com/aadarshjr123
+- **LinkedIn:** https://linkedin.com/in/aadarshss
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+Built with curiosity, caffeine, and a healthy respect for clean code ☕💻
